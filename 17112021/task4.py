@@ -1,13 +1,16 @@
 string = input()
-newstring = ''
+#newstring = ''
 flag = False
 for i in string:
     flag = i.isdigit()
     if flag:
-        continue
+       # continue
+        string=string.replace(i,"")
     else:
-        newstring=newstring+i
+        continue
+#        newstring=newstring+i
+       
 
 
-string=newstring
+#string=newstring
 print(string)
